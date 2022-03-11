@@ -1,0 +1,8 @@
+~$ sudo rm -v /etc/ssh/ssh_host_*
+~$ sudo dpkg-reconfigure openssh-server
+~$ sudo systemctl restart sshd.service
+
+
+sudo systemctl stop vncserver-x11-serviced
+sudo rm -rf /root/.vnc
+sudo systemctl start vncserver-x11-serviced
